@@ -25,12 +25,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto py-4 py-lg-0">
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Strona główna</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="posts/create.html">Utwórz post</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.php">Strona główna</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="posts/create.php">Utwórz post</a></li>
                        
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="auth/login.html">Logowanie</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="auth/register.html">Rejestracja</a></li>
-                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html">Kontakt</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="auth/login.php">Logowanie</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="auth/register.php">Rejestracja</a></li>
+                        <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.php">Kontakt</a></li>
                     </ul>
                 </div>
             </div>
@@ -54,7 +54,7 @@
                 <div class="col-md-10 col-lg-8 col-xl-7">
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="posts/post.html">
+                        <a href="posts/post.php">
                             <h2 class="post-title">Man must explore, and this is exploration at its greatest</h2>
                             <h3 class="post-subtitle">Problems look mighty small from 150 miles up</h3>
                         </a>
@@ -68,7 +68,7 @@
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post.html"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
+                        <a href="post.php"><h2 class="post-title">I believe every human has a finite number of heartbeats. I don't intend to waste any of mine.</h2></a>
                         <p class="post-meta">
                             Posted by
                             <a href="#!">Start Bootstrap</a>
@@ -79,7 +79,7 @@
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post.html">
+                        <a href="post.php">
                             <h2 class="post-title">Science has not yet mastered prophecy</h2>
                             <h3 class="post-subtitle">We predict too much for the next year and yet far too little for the next ten.</h3>
                         </a>
@@ -93,7 +93,7 @@
                     <hr class="my-4" />
                     <!-- Post preview-->
                     <div class="post-preview">
-                        <a href="post.html">
+                        <a href="post.php">
                             <h2 class="post-title">Failure is not an option</h2>
                             <h3 class="post-subtitle">Many say exploration is part of our destiny, but it’s actually our duty to future generations.</h3>
                         </a>
