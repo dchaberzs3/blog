@@ -1,7 +1,12 @@
-<?php require "http://localhost/blog/includes/header.php" ?> 
+
+<?php require "includes/header.php" ?> 
+<?php require "config/config.php" ?>
 
             <div class="row gx-4 gx-lg-5 justify-content-center">
                 <div class="col-md-10 col-lg-8 col-xl-7">
+                    <?php  if(isset($_SESSION['username'])) echo "Witaj na stronie <b>" . $_SESSION['username'] . "<b>";
+                   
+                    ?>
                     <!-- Post preview-->
                     <div class="post-preview">
                         <a href="posts/post.php">

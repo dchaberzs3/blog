@@ -1,8 +1,7 @@
-<?php require "http://localhost/blog/includes/header.php" ?> 
-<?php require "http://localhost/blog/config/config.php" ?>
+<?php require "../includes/header.php" ?> 
+<?php require "../config/config.php" ?>
 
 <?php
-
     if(isset($_POST['submit'])){
       if($_POST['email'] == ''  OR $_POST['password'] == '' ){
           echo "uzupełnij pola formularza";
@@ -16,8 +15,8 @@
 
           if($login->rowCount() > 0 ){
             if(password_verify($password, $row['password'])){
-              header('location: http://localhost/blog/index.php');
             $_SESSION['username'] = $row['username'];
+            header('location: http://localhost/blog/index.php');
             }
           }
         }
