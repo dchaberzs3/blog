@@ -1,5 +1,7 @@
-<?php require "http://localhost/blog/includes/header.php"; ?>
-<?php require "http://localhost/blog/config/config.php" ?>
+<?php 
+    require "../includes/header.php";
+    require "../config/config.php";
+?> 
 
 <?php
     if(isset($_POST['username'])){
@@ -59,7 +61,7 @@
               </div>
             </form>
 
-<?php require "http://localhost/blog/includes/footer.php"; ?>
+<?php require "../includes/footer.php" ?> 
 
 
            
