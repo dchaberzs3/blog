@@ -16,7 +16,7 @@
 
           if($login->rowCount() > 0 ){
             if(password_verify($password, $row['password'])){
-                  /*  header('location: ../index.php'); */
+              header('location: ../index.php');
             $_SESSION['username'] = $row['username'];
             }
           }
