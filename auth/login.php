@@ -1,5 +1,5 @@
-<?php require "../includes/header.php" ?> 
-<?php require "../config/config.php" ?>
+<?php require "http://localhost/blog/includes/header.php" ?> 
+<?php require "http://localhost/blog/config/config.php" ?>
 
 <?php
 
@@ -16,7 +16,7 @@
 
           if($login->rowCount() > 0 ){
             if(password_verify($password, $row['password'])){
-              header('location: ../index.php');
+              header('location: http://localhost/blog/index.php');
             $_SESSION['username'] = $row['username'];
             }
           }
@@ -53,4 +53,4 @@
                   </div>
                 </form>
 
-<?php require "../includes/footer.php" ?> 
+<?php require "http://localhost/blog/includes/footer.php" ?> 

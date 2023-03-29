@@ -1,5 +1,5 @@
-<?php require "../includes/header.php"; ?>
-<?php require "../config/config.php" ?>
+<?php require "http://localhost/blog/includes/header.php"; ?>
+<?php require "http://localhost/blog/config/config.php" ?>
 
 <?php
   if(isset($_POST['submit'])){
@@ -55,7 +55,7 @@
               </div>
             </form>
 
-<?php require "../includes/footer.php"; ?>
+<?php require "http://localhost/blog/includes/footer.php"; ?>
 
 
            
