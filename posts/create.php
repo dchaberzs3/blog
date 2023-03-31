@@ -7,19 +7,17 @@
     if(isset($_POST['submit'])){
         if( isset($_POST['title'])=='' || isset($_POST['subtitle'])=='' || isset($_POST['body'])=='' ){
             echo "Jedno z pól formularza jest puste";
-            var_dump($_POST['title']);
-            var_dump($_POST['subtitle']);
-            var_dump($_POST['body']);
         } else {
             $title = $_POST['title'];
             $subtitle =$_POST['subtitle'];
             $body =$_POST['body'];
             $img = $_FILES['img']['name'];
             $user_id = $_SESSION['user_id'];
+            $user_name = $_SESSION['username'];
 
             $dir = 'images/'.basename($img);
 
-            $insert = $conn->prepare("INSERT INTO posts (title, subtitle, body, img, user_id) VALUES (:title, :subtitle, :body, :img, :user_id)");
+            $insert = $conn->prepare("INSERT INTO posts (title, subtitle, body, img, user_id, user_name) VALUES (:title, :subtitle, :body, :img, :user_id, :user_name)");
 
             $insert->execute([
                 ':title' => $title, 
@@ -27,6 +25,7 @@
                 ':body' => $body, 
                 ':img' => $img,
                 ':user_id'=> $user_id,
+                ':user_name' => $user_name,
             ]);
 
             if( move_uploaded_file($_FILES['img']['tmp_name'], $dir) ){

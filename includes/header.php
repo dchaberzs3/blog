@@ -42,11 +42,7 @@
                         <li><a class="dropdown-item" href="http://localhost/blog/auth/logout.php">Logout</a></li>
                     </ul>
                     </li>
-
-
-
                     <?php else : ?> 
-
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="http://localhost/blog/auth/login.php">login</a></li>
                         <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="http://localhost/blog/auth/register.php">register</a></li>
                     <?php endif; ?> 
