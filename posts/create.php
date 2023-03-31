@@ -5,16 +5,19 @@
 
 <?php
     if(isset($_POST['submit'])){
-        if( isset($_POST['title'])=='' || isset($_POST['subtitle'])=='' || isset($_POST['body'])=='' || isset($_POST['image'])=='' ){
+        if( isset($_POST['title'])=='' || isset($_POST['subtitle'])=='' || isset($_POST['body'])=='' ){
             echo "Jedno z pól formularza jest puste";
+            var_dump($_POST['title']);
+            var_dump($_POST['subtitle']);
+            var_dump($_POST['body']);
         } else {
             $title = $_POST['title'];
             $subtitle =$_POST['subtitle'];
             $body =$_POST['body'];
-            $img = $_FILES['image']['name'];
+            $img = $_FILES['img']['name'];
             $user_id = $_SESSION['user_id'];
 
-            $dir = 'images/' . basename($img);
+            $dir = 'images/'.basename($img);
 
             $insert = $conn->prepare("INSERT INTO posts (title, subtitle, body, img, user_id) VALUES (:title, :subtitle, :body, :img, :user_id)");
 
@@ -35,7 +38,7 @@
 
 ?>
 
-            <form method="POST" action="create.php">
+            <form method="POST" action="create.php"  enctype="multipart/form-data">
               <!-- Email input -->
               <div class="form-outline mb-4">
                 <input type="text" name="title" id="form2Example1" class="form-control" placeholder="title" />
